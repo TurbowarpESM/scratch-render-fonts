@@ -26,11 +26,14 @@ const getFonts = function () {
     }
 
     if (!document.getElementById('scratch-font-styles')) {
+        let css = '';
+        for (const fontName in FONTS) {
+            css += FONTS[fontName];
+        }
+
         const documentStyleTag = document.createElement('style');
         documentStyleTag.id = 'scratch-font-styles';
-        for (const fontName in FONTS) {
-            documentStyleTag.textContent += FONTS[fontName];
-        }
+        documentStyleTag.textContent = css;
         document.body.insertBefore(documentStyleTag, document.body.firstChild);
     }
 
