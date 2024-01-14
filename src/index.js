@@ -6,12 +6,12 @@ const getFonts = function () {
     if (FONTS) return FONTS;
     /* eslint-disable global-require */
     FONTS = {
-        'Sans Serif': require('base64-loader!./NotoSans-Medium.ttf'),
-        'Serif': require('base64-loader!./SourceSerifPro-Regular.otf'),
-        'Handwriting': require('base64-loader!./handlee-regular.ttf'),
-        'Marker': require('base64-loader!./Knewave.ttf'),
-        'Curly': require('base64-loader!./Griffy-Regular.ttf'),
-        'Pixel': require('base64-loader!./Grand9K-Pixel.ttf')
+        'Sans Serif': require('base64-loader!./NotoSans-Medium.woff2'),
+        'Serif': require('base64-loader!./SourceSerifPro-Regular.woff2'),
+        'Handwriting': require('base64-loader!./handlee-regular.woff2'),
+        'Marker': require('base64-loader!./Knewave.woff2'),
+        'Curly': require('base64-loader!./Griffy-Regular.woff2'),
+        'Pixel': require('base64-loader!./Grand9K-Pixel.woff2')
     };
     /* eslint-enable global-require */
 
@@ -22,7 +22,7 @@ const getFonts = function () {
     for (const fontName in FONTS) {
         const fontData = FONTS[fontName];
         FONTS[fontName] = '@font-face {' +
-            `font-family: "${fontName}";src: url("data:application/x-font-ttf;charset=utf-8;base64,${fontData}");}`;
+            `font-family: "${fontName}";src: url("data:font/woff2;base64,${fontData}");}`;
     }
 
     if (!document.getElementById('scratch-font-styles')) {
