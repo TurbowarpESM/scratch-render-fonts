@@ -11,7 +11,8 @@ const getFonts = function () {
         'Handwriting': require('base64-loader!./handlee-regular.woff2'),
         'Marker': require('base64-loader!./Knewave.woff2'),
         'Curly': require('base64-loader!./Griffy-Regular.woff2'),
-        'Pixel': require('base64-loader!./Grand9K-Pixel.woff2')
+        'Pixel': require('base64-loader!./Grand9K-Pixel.woff2'),
+        'Scratch': require('base64-loader!./ScratchSavers_b2.woff2')
     };
     /* eslint-enable global-require */
 
