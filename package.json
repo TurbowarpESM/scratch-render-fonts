@@ -4,10 +4,10 @@
   "description": "",
   "main": "./src/index.js",
   "author": "Massachusetts Institute of Technology",
-  "homepage": "https://github.com/scratchfoundation/scratch-render-fonts#readme",
+  "homepage": "https://github.com/TurbowarpESM/scratch-render-fonts#readme",
   "repository": {
     "type": "git",
-    "url": "https://git@github.com/scratchfoundation/scratch-render-fonts.git"
+    "url": "https://git@github.com/TurbowarpESM/scratch-render-fonts.git"
   },
   "scripts": {
     "build": "tsup",
