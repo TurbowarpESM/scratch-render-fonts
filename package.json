@@ -2,12 +2,7 @@
   "name": "scratch-render-fonts",
   "version": "1.0.0",
   "description": "",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    }
-  },
+  "main": "./src/index.js",
   "author": "Massachusetts Institute of Technology",
   "homepage": "https://github.com/scratchfoundation/scratch-render-fonts#readme",
   "repository": {
